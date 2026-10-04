@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#11130f" />
+<title>Aaron Ray — AI · Data · Content / Marketing</title>
+<meta name="description" content="Aaron Ray — AI evaluation, analytics, digital strategy, and applied technology." />
+<style>
+:root{
+  --bg:#0d0f0c;--bg2:#131610;--card:#171b15;--card2:#1c2118;--line:rgba(242,240,230,.12);
+  --line2:rgba(242,240,230,.20);--text:#f5f3e9;--soft:#d5d6c9;--muted:#9da28f;
+  --accent:#aeb77d;--accent2:#d7dda8;--brown:#5b4035;--radius:24px;--shadow:0 28px 70px rgba(0,0,0,.35)
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55;background:radial-gradient(circle at 10% 4%,rgba(130,142,78,.13),transparent 31rem),radial-gradient(circle at 91% 13%,rgba(92,60,48,.15),transparent 28rem),var(--bg)}
+a{color:inherit;text-decoration:none} button{font:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}.topbar{position:sticky;top:0;z-index:50;background:rgba(13,15,12,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.topbar-inner{height:70px;display:flex;align-items:center;gap:24px}.brand{display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--line2);border-radius:13px;font-weight:900;letter-spacing:-.04em;background:linear-gradient(145deg,#232719,#11130f)}
+.nav{display:flex;gap:22px;margin-left:auto}.nav a{font-size:14px;color:var(--muted)}.nav a:hover{color:var(--text)}.top-resume{padding:9px 15px;border-radius:999px;border:1px solid var(--line2);font-size:13px;margin-left:8px}.section{padding:92px 0}.eyebrow{margin:0 0 13px;color:var(--accent);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.18em}.hero{padding:104px 0 82px;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);gap:50px;align-items:center}.hero h1{font-size:clamp(70px,9vw,126px);line-height:.86;letter-spacing:-.075em;margin:0}.role{font-size:clamp(22px,2.7vw,34px);font-weight:760;color:var(--soft);margin:28px 0 0;letter-spacing:-.035em}.subrole{font-size:16px;color:var(--accent2);font-weight:700;margin:8px 0 0}.hero p.lead{max-width:720px;color:var(--muted);font-size:18px;margin:25px 0 0}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:999px;border:1px solid var(--line2);font-weight:800;font-size:14px;cursor:pointer;transition:.18s ease;background:transparent;color:var(--text)}.btn:hover{transform:translateY(-1px);border-color:rgba(215,221,168,.45)}.btn-primary{background:var(--accent);color:#12150e;border-color:var(--accent)}.btn-ghost{background:rgba(255,255,255,.025)}
+.open-to{margin-top:28px;font-size:14px;color:var(--muted)}.hero-card{border:1px solid var(--line);border-radius:28px;background:linear-gradient(165deg,rgba(31,36,25,.96),rgba(18,21,16,.96));padding:28px;box-shadow:var(--shadow)}.status{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:900}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(174,183,125,.10)}.hero-card h2{font-size:28px;letter-spacing:-.04em;margin:19px 0 7px}.hero-card>p{color:var(--muted);margin:0}.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.proof{padding:17px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}.proof strong{display:block;font-size:25px;line-height:1;color:var(--accent2);letter-spacing:-.04em}.proof span{display:block;color:var(--muted);font-size:12px;margin-top:7px}.recent{margin-top:18px;border-top:1px solid var(--line);padding-top:18px}.recent small{display:block;color:var(--accent);font-weight:900;letter-spacing:.13em;text-transform:uppercase;margin-bottom:10px}.recent div{display:flex;justify-content:space-between;gap:14px;padding:8px 0;font-size:14px}.recent div span:last-child{color:var(--muted)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.section-head h2{margin:0;font-size:clamp(36px,5vw,62px);letter-spacing:-.055em;line-height:1}.section-note{max-width:390px;color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.info{border:1px solid var(--line);border-radius:22px;padding:25px;background:rgba(255,255,255,.023)}.info .num{font-size:12px;color:var(--accent);font-weight:900}.info h3{font-size:22px;margin:26px 0 8px;letter-spacing:-.03em}.info p{margin:0;color:var(--muted)}
+.project-shell{border:1px solid var(--line);border-radius:32px;overflow:hidden;background:linear-gradient(145deg,#171b12,#10130e);box-shadow:var(--shadow)}.project-top{display:grid;grid-template-columns:130px 1fr;gap:30px;align-items:center;padding:34px}.pb-logo{width:130px;height:130px;border-radius:22px;object-fit:cover}.project-top h2{font-size:clamp(45px,6vw,76px);line-height:.9;letter-spacing:-.06em;margin:0}.project-top .lead{color:var(--soft);font-size:18px;max-width:780px;margin:18px 0 0}.flow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.flow span{border:1px solid rgba(174,183,125,.25);background:rgba(174,183,125,.07);color:var(--accent2);padding:7px 11px;border-radius:999px;font-size:12px;font-weight:800}.project-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.project-story{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.story{padding:30px}.story+ .story{border-left:1px solid var(--line)}.story h3{font-size:22px;margin:0 0 10px}.story p{color:var(--muted);margin:0}.gallery{padding:0 30px 34px}.gallery h3{margin:2px 0 16px;font-size:22px}.shot{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#080a08}.shot img{display:block;width:100%;height:auto}.shot figcaption{padding:12px 14px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}.shot-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}.old-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.old-row .shot figcaption{font-size:12px}.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.company-card{position:relative;min-height:255px;border:1px solid var(--line);border-radius:22px;padding:24px;background:rgba(255,255,255,.022);display:flex;flex-direction:column;transition:.2s ease}.company-card:hover{transform:translateY(-3px);border-color:rgba(174,183,125,.34);background:rgba(174,183,125,.035)}.company-num{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.12em}.company-num span:first-child{color:var(--accent)}.company-card h3{font-size:23px;line-height:1.1;letter-spacing:-.035em;margin:26px 0 8px}.company-angle{color:var(--muted);margin:0 0 18px;font-size:14px}.role-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.role-tags span{font-size:11px;padding:6px 8px;border:1px solid var(--line);border-radius:999px;color:var(--soft)}.explore{margin-top:16px;border:0;background:transparent;padding:0;text-align:left;color:var(--accent2);font-weight:900;cursor:pointer}.contact{border:1px solid var(--line);border-radius:28px;padding:36px;background:linear-gradient(145deg,rgba(91,64,53,.22),rgba(174,183,125,.07));display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:clamp(34px,5vw,62px);margin:0;letter-spacing:-.05em;line-height:1}.contact p{color:var(--muted);max-width:650px}.footer{padding:34px 0 54px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+.modal{position:fixed;inset:0;display:none;z-index:100}.modal.open{display:block}.backdrop{position:absolute;inset:0;background:rgba(3,4,3,.8);backdrop-filter:blur(10px)}.panel{position:absolute;right:0;top:0;height:100%;width:min(720px,100%);overflow:auto;background:#11140f;border-left:1px solid var(--line);padding:38px 38px 60px;box-shadow:-25px 0 80px rgba(0,0,0,.4)}.close{position:sticky;top:0;float:right;z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);background:#171b14;color:var(--text);font-size:24px;cursor:pointer}.modal-kicker{color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.17em;font-weight:900;margin:6px 0 12px}.modal-title{font-size:48px;letter-spacing:-.055em;line-height:.95;margin:0 0 12px}.modal-sub{color:var(--muted);font-size:17px}.modal-roles{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 34px}.modal-roles span{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:12px}.modal-section{border-top:1px solid var(--line);padding:24px 0}.modal-section h3{margin:0 0 10px;font-size:19px}.modal-section p{color:var(--muted);margin:0}.connect-list{display:grid;gap:10px}.connect-item{padding:13px 0}.connect-item strong{display:block;color:var(--soft)}.connect-item span{display:block;color:var(--muted);font-size:14px;margin-top:3px}.question{padding:18px;border:1px solid rgba(174,183,125,.25);border-radius:18px;background:rgba(174,183,125,.06);color:var(--soft);font-weight:650}.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.mobile-menu{display:none}
+@media(max-width:900px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:70px}.hero-card{max-width:620px}.about-grid,.company-grid{grid-template-columns:1fr 1fr}.project-top{grid-template-columns:90px 1fr}.pb-logo{width:90px;height:90px}.shot-grid{grid-template-columns:1fr}.old-row{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column}.section-note{max-width:650px}}
+@media(max-width:620px){.wrap{width:min(100% - 28px,1180px)}.topbar-inner{height:62px}.top-resume{margin-left:auto}.hero{padding:62px 0 58px}.hero h1{font-size:66px}.role{font-size:25px}.hero p.lead{font-size:16px}.proof-grid{grid-template-columns:1fr}.about-grid,.company-grid{grid-template-columns:1fr}.section{padding:68px 0}.project-top{grid-template-columns:1fr;padding:25px}.pb-logo{width:74px;height:74px}.project-story{grid-template-columns:1fr}.story+.story{border-left:0;border-top:1px solid var(--line)}.gallery{padding:0 20px 24px}.panel{padding:25px 20px 50px}.modal-title{font-size:39px}.footer{flex-direction:column;gap:12px}.recent div{flex-direction:column;gap:2px}.nav{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap topbar-inner"><a class="brand" href="#top">AR</a><nav class="nav"><a href="#about">About</a><a href="prompt-bench.html">Prompt Bench</a><a href="#companies">Companies</a><a href="#contact">Contact</a></nav><a class="top-resume" href="assets/Aaron_Ray_Resume.pdf" target="_blank">Resume ↗</a></div></header>
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <p class="eyebrow">Career fair edition · Philadelphia</p>
+    <h1>Aaron Ray</h1>
+    <p class="role">AI · Data · Content / Marketing</p>
+    <p class="subrole">AI Evaluation · Analytics · Digital Strategy</p>
+    <p class="lead">I evaluate AI, work with data, and turn complex ideas into clear digital experiences.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="assets/Aaron_Ray_Resume.pdf" target="_blank">View Resume</a>
+      <a class="btn btn-ghost" href="prompt-bench.html">Prompt Bench →</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/aaronray94" target="_blank">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/rayaaron1994" target="_blank">GitHub ↗</a>
+    </div>
+    <p class="open-to">Open to <strong>Junior</strong> · <strong>Associate</strong> · <strong>Apprenticeship</strong> · <strong>Fellowship</strong> · <strong>Early-Career Technical</strong> roles</p>
+  </div>
+  <aside class="hero-card">
+    <div class="status"><span class="dot"></span><span>Now building</span></div>
+    <h2>Prompt Bench</h2>
+    <p>Multi-agent AI evaluation with OpenAI, Claude, Gemini, blind judging, synthesis, and final QA.</p>
+    <div class="actions" style="margin-top:20px"><a class="btn btn-primary" href="prompt-bench.html">View project →</a></div>
+    <div class="recent"><small>Recent activity</small><div><span>Per Scholas</span><span>AI-Assisted BI · Completed</span></div><div><span>LaunchCode by Hire Human</span><span>In progress</span></div></div>
+  </aside>
+</section>
+
+<section id="about" class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">What I bring</p><h2>Three lanes. One profile.</h2></div><p class="section-note">AI-first, technically curious, and built to communicate.</p></div><div class="about-grid">
+<article class="info"><span class="num">01</span><h3>AI & Quality</h3><p>Model evaluation, edge cases, QA standards, workflow improvement.</p></article>
+<article class="info"><span class="num">02</span><h3>Data & Technical</h3><p>Excel, GitHub, Python, SQL, Power BI, data cleaning and reporting.</p></article>
+<article class="info"><span class="num">03</span><h3>Content & Marketing</h3><p>Digital strategy, social media, copy, video, visual storytelling.</p></article>
+</div></div></section>
+
+
+<section id="companies" class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">Career fair</p><h2>Who I came to meet.</h2></div><p class="section-note">Choose your organization to see the fit I researched before walking in.</p></div><div id="companyGrid" class="company-grid"></div></div></section>
+
+<section id="contact" class="section"><div class="wrap"><div class="contact"><div><p class="eyebrow">Answer the call</p><h2>Keep the conversation going.</h2><p>Resume, project work, and contact info are one click away.</p></div><div class="actions"><a class="btn btn-primary" href="mailto:Rayaaron94@gmail.com">Email Aaron</a><a class="btn btn-ghost" href="assets/Aaron_Ray_Resume.pdf" target="_blank">Resume ↗</a><a class="btn btn-ghost" href="https://linkedin.com/in/aaronray94" target="_blank">LinkedIn ↗</a></div></div></div></section>
+</main>
+<footer><div class="wrap footer"><span>© 2026 Aaron Ray</span><span>AI · Data · Content / Marketing</span></div></footer>
+
+<div class="modal" id="companyModal" aria-hidden="true"><div class="backdrop" data-close></div><aside class="panel"><button class="close" data-close aria-label="Close">×</button><div id="modalContent"></div></aside></div>
+<script>
+const companies = [
+
+  {
+    name: "TEKsystems",
+    short: "Personal pipeline connection",
+    angle: "AI-first candidate with a direct Per Scholas + family connection to TEKsystems.",
+    roles: ["Data Analyst", "Business/Systems Analyst", "AI-adjacent", "Junior Automation"],
+    whyFit: "My strongest area is AI, particularly evaluating model outputs, identifying quality issues, working with AI-assisted workflows, and understanding where human judgment needs to remain in the loop. I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I completed Per Scholas’ AI-Assisted Business Intelligence program, I’m continuing through LaunchCode by Hire Human, and I’ve applied those skills independently through Prompt Bench.",
+    stoodOut: "TEKsystems already intersects with my story in two concrete ways: its longstanding relationship with Per Scholas directly overlaps with the path I’m on, and my brother landed his first technology role through TEKsystems. I’ve seen what that bridge into the industry can look like up close.",
+    mission: "What matters to me is the opportunity-building side of the model: helping people convert technical training and potential into real professional experience. That is exactly the stage of my career I’m in now.",
+    connects: [
+      ["AI & Automation", "Professional AI-output evaluation plus independent work with multi-model workflows and quality evaluation."],
+      ["Data & Analytics", "Working knowledge of Excel, Python, SQL, and Power BI supported by hands-on BI training."],
+      ["Business & Systems Analysis", "Experience evaluating information, documenting processes, spotting gaps, and communicating clear feedback."]
+    ],
+    question: "Where do you see the strongest placement opportunities for someone early-career whose strongest area is AI evaluation but who is also building across data and business analysis?"
+  },
+  {
+    name: "firstPRO",
+    short: "Cross-functional recruiter fit",
+    angle: "A nontraditional technical profile that spans AI, analytics, QA, and business problem-solving.",
+    roles: ["Business Analyst", "Data/BI Analyst", "Systems/Product Analyst", "AI & Automation"],
+    whyFit: "My background combines professional AI-output evaluation, business-facing problem solving, and a growing analytics toolkit. AI is currently my strongest area, while I have working knowledge across Excel, GitHub, Python, SQL, and Power BI. I recently completed Per Scholas’ AI-Assisted Business Intelligence program, I’m continuing through LaunchCode by Hire Human, and I’ve built Prompt Bench to apply what I’m learning outside the classroom.",
+    stoodOut: "What caught my attention about firstPRO is the emphasis on acting as a career partner rather than simply matching someone to the next available opening. That matters for my background because I don’t fit neatly into one title yet.",
+    mission: "My experience overlaps AI evaluation, analytics, QA, process improvement, business analysis, and emerging automation. A recruiting partner that works across multiple technology functions can see opportunities where that combination is useful instead of reducing my background to a single keyword.",
+    connects: [
+      ["Business & Systems Analysis", "Structured problem solving, process documentation, requirements-oriented thinking, evaluation, and communication."],
+      ["Data & BI", "Working knowledge of Excel, Python, SQL, and Power BI with hands-on analytics training."],
+      ["AI & Automation", "Professional experience evaluating AI outputs and independent work building AI evaluation workflows."],
+      ["Product & Operations", "Experience assessing quality, spotting gaps, improving processes, and translating findings into actionable feedback."]
+    ],
+    question: "When a candidate’s strengths cross AI, analytics, QA, and business analysis, how does firstPRO decide which client opportunities are the best fit?"
+  },
+  {
+    name: "WSFS Bank",
+    short: "Grow at the business + technology bridge",
+    angle: "Early-career AI and analytics skills aligned with business systems, operations, and internal growth.",
+    roles: ["Associate BA", "Data Analyst", "Business Systems", "Operations Analyst"],
+    whyFit: "My background combines AI evaluation, structured problem-solving, process documentation, and a growing analytics toolkit. AI is my strongest area, and I have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I recently completed Per Scholas’ AI-Assisted Business Intelligence program and I’m continuing through LaunchCode by Hire Human.",
+    stoodOut: "What caught my attention was seeing a real example of someone entering through a workforce-development pathway and growing into an Associate Business Analyst role. That progression feels especially relevant to the path I’m on now. I’m also interested in how WSFS connects business operations and technology through systems, reporting, process improvement, and cross-functional work.",
+    mission: "WSFS’ service-centered identity and emphasis on developing its people stand out to me. As someone building my career in the Philadelphia region, I like the idea of developing technically inside an organization whose work directly serves the same region.",
+    connects: [
+      ["Business & Systems Analysis", "Evaluating information, identifying gaps, documenting processes, and communicating clear feedback."],
+      ["Data & Analytics", "Working knowledge of Excel, Python, SQL, and Power BI supported by hands-on BI training."],
+      ["AI & Quality Evaluation", "Professional experience evaluating AI-generated outputs and working within structured review processes."],
+      ["Process Improvement", "Experience thinking about how information moves through a workflow, where errors occur, and how systems can become clearer and more reliable."]
+    ],
+    question: "What early-career path at WSFS best develops someone who wants to work at the intersection of business operations, technology, and analytics?"
+  },
+  {
+    name: "Abel Personnel",
+    short: "Human-first recruiter fit",
+    angle: "A candidate whose nontraditional technical profile benefits from a listen-first recruiting approach.",
+    roles: ["Data/Reporting", "Business Analyst", "Tech Operations", "Junior Systems"],
+    whyFit: "My background combines professional AI evaluation, structured problem-solving, business experience, and a growing technical toolkit. AI is my strongest area, while I have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I completed Per Scholas’ AI-Assisted Business Intelligence program and I’m continuing through LaunchCode by Hire Human.",
+    stoodOut: "What caught my attention about Abel Personnel is the emphasis on actually knowing the candidate—listening to goals and abilities and then finding a fit that makes sense beyond keywords on a resume.",
+    mission: "That approach is especially relevant to me because my experience crosses AI-output evaluation, analytics training, quality assurance, process documentation, and technical project work. I’d value a recruiter who can recognize where those skills transfer across data, business analysis, technology operations, or emerging automation work.",
+    connects: [
+      ["AI & Quality Evaluation", "Professional experience reviewing AI-generated outputs, identifying issues, and providing structured feedback."],
+      ["Data & Reporting", "Working knowledge of Excel, Python, SQL, and Power BI supported by hands-on BI training."],
+      ["Business & Process Analysis", "Experience breaking down workflows, documenting findings, spotting gaps, and communicating clearly."],
+      ["Technology Operations", "Comfort learning new systems, troubleshooting unfamiliar workflows, and working across technical and nontechnical problems."]
+    ],
+    question: "If you met a candidate with AI-evaluation experience plus a developing analytics toolkit, which types of client roles would you watch for first?"
+  },
+  {
+    name: "Launchpad Philly",
+    short: "Applied AI + skills-first alignment",
+    angle: "Professional AI evaluation plus hands-on building aligns directly with Launchpad’s applied technology model.",
+    roles: ["AI & Automation", "Data Analysis", "QA/Evaluation", "Technical Projects"],
+    whyFit: "My strongest area is AI, particularly evaluating model outputs, identifying quality issues, testing AI behavior, and applying human judgment to AI-assisted workflows. I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I completed Per Scholas’ AI-Assisted Business Intelligence program, I’m continuing through LaunchCode, and I built Prompt Bench as an independent applied project.",
+    stoodOut: "What immediately caught my attention is that the roles Launchpad prepares people for—AI & Automation Specialist, Data Analyst, QA Tester, and Technical Project Coordinator—closely overlap with the direction I’m already building toward. I’m especially interested in the model of doing real AI and data work for organizations rather than stopping at classroom training.",
+    mission: "My own route into tech has been skills-first and project-driven. I value programs that create real pathways through practical training, hands-on work, and employer connection rather than assuming everyone already has years of experience.",
+    connects: [
+      ["AI Evaluation & QA", "Professional experience evaluating AI-generated outputs, identifying quality issues, and applying structured review standards."],
+      ["Applied AI", "Hands-on work with multi-model workflows, comparison, synthesis, and quality control through Prompt Bench."],
+      ["Data & Analytics", "Working knowledge of Excel, Python, SQL, and Power BI supported by BI training."],
+      ["Technical Project Work", "Comfort learning by building, testing systems, documenting problems, and iterating when something does not work as expected."]
+    ],
+    question: "Where could someone with professional AI-evaluation experience and a working prototype like Prompt Bench add value in Launchpad’s applied AI or client work?"
+  },
+  {
+    name: "Peerstar",
+    short: "Meet people where they are",
+    angle: "A mission connection rooted in being met where I was—and an interest in strengthening the systems behind frontline service.",
+    roles: ["Operations Analysis", "Business Systems", "Reporting/Data", "Process Improvement"],
+    whyFit: "My background combines AI evaluation, structured quality review, process documentation, and a growing analytics toolkit. AI is my strongest area, and I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I completed Per Scholas’ AI-Assisted Business Intelligence program and I’m continuing through LaunchCode by Hire Human.",
+    stoodOut: "Peerstar is service-driven, but it also operates at scale. That requires strong systems behind the scenes: referrals, reporting, operations, compliance, technology, and process coordination. That systems layer is where my background becomes relevant.",
+    mission: "Peerstar’s emphasis on meeting people where they are resonates with me personally. That’s something I experienced through Per Scholas: instead of treating a nontraditional path into technology as a disadvantage, the program met me at my current skill level and gave me a practical path to build from there. That experience made me passionate about systems that recognize where someone is, provide meaningful support, and create a path forward.",
+    connects: [
+      ["Operations & Process Improvement", "Experience reviewing workflows, identifying gaps, documenting findings, and thinking about how processes can become more consistent."],
+      ["Business Systems", "Comfortable learning unfamiliar systems and understanding how tools, users, and processes interact."],
+      ["Data & Reporting", "Working knowledge of Excel, Python, SQL, and Power BI with hands-on BI training."],
+      ["AI & Quality Evaluation", "Professional experience evaluating AI-generated outputs, applying structured standards, and identifying quality issues."]
+    ],
+    question: "Where do you see the biggest behind-the-scenes technology, reporting, or process-improvement needs as Peerstar continues to scale?"
+  },
+  {
+    name: "Episcopal Community Services",
+    short: "Data + impact + communication",
+    angle: "A mission-driven environment where analysis, storytelling, and program improvement intersect.",
+    roles: ["Impact Analysis", "Reporting/BI", "Program Analytics", "Innovation Support"],
+    whyFit: "My background combines AI evaluation, structured quality analysis, technical training, and communication. AI is currently my strongest technical area, while I have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I also bring experience in content creation and visual communication, which matters because good analysis is only useful if people can understand it and act on it.",
+    stoodOut: "What immediately caught my attention was ECS’s use of data as part of the mission itself. The organization connects analysis, program evaluation, staff learning, storytelling, and continuous improvement so teams can better understand what is working for the people they serve.",
+    mission: "ECS’s emphasis on helping people determine and follow their own paths resonates with me because my own transition into technology has depended on organizations that were willing to meet me where I was and give me a practical path forward. Per Scholas did that for me, and I’m continuing that process now through LaunchCode.",
+    connects: [
+      ["AI & Quality Evaluation", "Professional experience reviewing AI-generated outputs, identifying quality issues, and applying structured evaluation standards."],
+      ["Data & Impact", "Working knowledge of Excel, Python, SQL, and Power BI with an interest in using data to understand outcomes."],
+      ["Communication & Data Storytelling", "Digital-media and content-creation experience with an ability to make complicated information more understandable and engaging."],
+      ["Learning & Improvement", "Comfort reviewing systems, identifying gaps, documenting findings, and using feedback to improve a process over time."]
+    ],
+    question: "If your current data and innovation work is more senior, where could someone early-career begin building toward that kind of impact-focused analytics responsibility?"
+  },
+  {
+    name: "Urban Technology Project",
+    short: "Apprenticeship is the model",
+    angle: "A skills-first candidate who genuinely values paid, structured technical development.",
+    roles: ["Software Apprenticeship", "Technology Apprenticeship", "Applied AI", "Digital Tech"],
+    whyFit: "I’m building my technology career through a skills-first, nontraditional path. My strongest area is AI, particularly evaluating model outputs and working with AI-assisted systems. I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I completed Per Scholas’ AI-Assisted Business Intelligence program, I’m continuing through LaunchCode, and I’m completely open to an apprenticeship or structured early-career path where I can contribute while developing deeper technical experience.",
+    stoodOut: "What immediately stood out is that apprenticeship is not treated as a consolation prize—it is the actual model. UTP combines paid work experience, technical training, industry certifications, mentorship, and professional development to help career changers build credible technology careers.",
+    mission: "I appreciate UTP because so many ‘entry-level’ roles still ask for years of prior experience, which can make it difficult for capable people to ever get the first opportunity that lets them prove themselves. UTP treats potential, training, and hands-on development as part of the hiring equation. That reflects the kind of opportunity that helped me through Per Scholas and the kind of pathway I genuinely value.",
+    connects: [
+      ["AI & Quality Evaluation", "Professional experience evaluating AI-generated outputs, identifying issues, and applying structured quality standards."],
+      ["Programming & Technical Development", "Working knowledge of Python, SQL, GitHub, and technical workflows, with continued hands-on development through LaunchCode."],
+      ["Applied Project Work", "Built Prompt Bench to explore multi-model AI workflows, evaluation, synthesis, quality control, and analytics."],
+      ["Digital Media & Communication", "Prior content-creation and visual-communication experience that connects with broader digital-technology work."]
+    ],
+    question: "When will the next Software Developer Apprenticeship open, and how would my AI/data training and professional AI-evaluation experience map to your apprenticeship requirements?"
+  },
+  {
+    name: "Tabor Children’s Services",
+    short: "Youth mission + program quality",
+    angle: "Mentorship values paired with an interest in strengthening the data, quality, and systems behind youth services.",
+    roles: ["Program/Data Support", "Quality & Performance", "Reporting", "Tech Support"],
+    whyFit: "My background combines professional AI evaluation, quality review, process documentation, analytical training, and communication. AI is currently my strongest technical area, and I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I also bring digital-media and content-creation experience.",
+    stoodOut: "What stood out to me about Tabor is the combination of human-centered service and structured accountability. Supporting children and families is deeply personal work, but strong programs also rely on performance measurement, documentation, quality controls, reporting, and ongoing evaluation.",
+    mission: "Tabor’s focus on helping young people build toward stability and independence connects with something I’ve cared about beyond technology. In college, I had a campus mentorship organization called Boyz 2 Men, focused on mentorship and supporting young men, and I plan to continue that type of community involvement through 100 Black Men of Philadelphia. Using my technical skills behind the scenes of a youth-serving organization would give my day-to-day work a mission connection I genuinely value.",
+    connects: [
+      ["Quality & Performance", "Professional experience evaluating work against standards, identifying issues, documenting findings, and maintaining consistency."],
+      ["Data & Reporting", "Working knowledge of Excel, Python, SQL, and Power BI supported by business-intelligence training."],
+      ["Process Improvement", "Comfort examining workflows, finding gaps, and thinking about how systems can become clearer and more reliable."],
+      ["Communication & Outreach", "Digital-media and content-creation experience that can support reporting, storytelling, community communication, or program visibility."]
+    ],
+    question: "Are there behind-the-scenes opportunities in program quality, reporting, operations, or technology where someone with my background could support the teams doing direct youth and family services?"
+  },
+  {
+    name: "Graduate Philadelphia",
+    short: "Learning → earning",
+    angle: "A nontraditional adult learner who understands the workforce-development journey from the learner side.",
+    roles: ["Program Operations", "Innovation Support", "Digital Comms", "Data/Reporting"],
+    whyFit: "My background sits at an unusual intersection of technology, workforce development, and communication. My strongest technical area is AI, and I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. Alongside that technical work, I bring experience in digital media, content creation, and visual communication.",
+    stoodOut: "What immediately stood out was Graduate Philadelphia’s focus on the connection between learning and earning. The work goes beyond helping someone complete a credential; it helps adults connect education decisions to career goals, navigate barriers, build new skills, and reach sustainable employment.",
+    mission: "The phrase ‘nontraditional adult learner’ gets my attention because my own path into technology has been nontraditional. Programs like Per Scholas gave me a structured way to build practical technical skills and move toward a new career without requiring that I already arrive with years of industry experience. I’m continuing that same process through LaunchCode.",
+    connects: [
+      ["Workforce & Program Support", "Firsthand understanding of skills-based career transition combined with strong process and documentation experience."],
+      ["AI & Innovation", "Professional AI-evaluation experience and hands-on experimentation with multi-model AI workflows."],
+      ["Digital Communication", "Content creation, visual communication, and the ability to make complicated information more approachable."],
+      ["Data & Reporting", "Working knowledge of Excel, Python, SQL, and Power BI supported by BI training."]
+    ],
+    question: "Where do you see the strongest opportunity for technology and AI to improve the bridge between adult learning, employer needs, and actual job placement?"
+  },
+  {
+    name: "National Center for Urban Solutions",
+    short: "Technology + economic mobility",
+    angle: "A skills-first AI candidate who directly relates to the mission of connecting untapped talent with opportunity.",
+    roles: ["Workforce Technology", "Program/Data Support", "AI & Innovation", "Impact Reporting"],
+    whyFit: "My background combines professional AI evaluation, workforce-based technical training, analytical skills, and communication. AI is my strongest area, and I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I’m open to associate, apprenticeship, fellowship, and other structured early-career technical opportunities where I can contribute while continuing to build deeper experience.",
+    stoodOut: "What immediately stood out was NCUS TEC and the broader focus on connecting technical skills to economic mobility. I’m also interested in NCUS’ focus on AI and the future of work—especially the idea that technology can move faster than workers are given chances to retrain.",
+    mission: "My own move into technology has happened because organizations were willing to see potential before years of industry experience existed. Per Scholas gave me practical training and a structured entry point. I’m continuing that process through LaunchCode, building independently, and looking for the professional experience that turns those skills into a career.",
+    connects: [
+      ["AI & Emerging Technology", "Professional AI-output evaluation experience plus hands-on work with multi-model AI systems."],
+      ["Workforce & Technology Programs", "Firsthand experience navigating a skills-first transition into technology through workforce-development programs."],
+      ["Data & Reporting", "Working knowledge of Excel, Python, SQL, and Power BI supported by hands-on BI training."],
+      ["Communication & Engagement", "Digital-media and content-creation experience that can make technical opportunities understandable and engaging to broader audiences."]
+    ],
+    question: "As NCUS TEC expands its work around AI and emerging technology, where do you see opportunities for someone early in their technical career who already has professional AI-evaluation experience?"
+  },
+  {
+    name: "City of Philadelphia OIT",
+    short: "Return to City service with a new toolkit",
+    angle: "Previous City digital-strategy experience now layered with AI, analytics, and technical training.",
+    roles: ["Data & Analytics", "Business/Systems", "Digital Services", "AI/Automation"],
+    whyFit: "My background combines professional AI evaluation, quality analysis, technical training, process thinking, and digital communication. My strongest technical area is AI, and I also have working knowledge of Excel, GitHub, Python, SQL, and Power BI. I completed Per Scholas’ AI-Assisted Business Intelligence program and I’m continuing through LaunchCode by Hire Human.",
+    stoodOut: "Technology isn’t my first connection to City government. I previously worked for the City of Philadelphia as a Digital Strategy Intern with SERVE Philadelphia. At that point, my contribution was primarily digital media and communications. Now I would be returning with a new layer of capability: AI evaluation, analytics training, programming fundamentals, business intelligence, and technical project work.",
+    mission: "What I like about OIT is that the technology has a clear purpose: make City government work better for the people using it. That human-centered approach connects strongly with how I think about AI as well. I’m interested in technology that improves a real process, helps someone make a better decision, reduces unnecessary friction, or makes information easier to use.",
+    connects: [
+      ["AI & Quality Evaluation", "Professional experience evaluating AI-generated outputs, identifying issues, applying structured standards, and determining whether outputs satisfy user needs."],
+      ["Business & Process Analysis", "Experience reviewing workflows, identifying gaps, documenting findings, testing outputs, and translating complex information into actionable feedback."],
+      ["Data & Analytics", "Working knowledge of Excel, Python, SQL, and Power BI supported by hands-on BI training."],
+      ["Digital Communication", "A background in digital media and content creation that connects with content design, user-centered digital services, and communicating technology to nontechnical audiences."],
+      ["Public Service", "Previous City experience gives me firsthand familiarity with the idea that behind every internal process or digital tool is a resident, employee, or community that ultimately depends on it."]
+    ],
+    question: "Given my previous City experience and the technical skills I’ve built since then, where does OIT see the strongest early-career path for someone combining AI evaluation, analytics, process improvement, and digital communication?"
+  }
+];
+const grid=document.getElementById('companyGrid'), modal=document.getElementById('companyModal'), content=document.getElementById('modalContent');
+function card(c,i){return `<article class="company-card"><div class="company-num"><span>${String(i+1).padStart(2,'0')}</span><span>CAREER FAIR</span></div><h3>${c.name}</h3><p class="company-angle">${c.short}</p><div class="role-tags">${c.roles.slice(0,4).map(r=>`<span>${r}</span>`).join('')}</div><button class="explore" data-company="${i}">Explore my fit ↗</button></article>`}
+grid.innerHTML=companies.map(card).join('');
+function openCompany(i){const c=companies[i];content.innerHTML=`<p class="modal-kicker">Company ${String(i+1).padStart(2,'0')} · Career Fair Fit</p><h2 class="modal-title">${c.name}</h2><p class="modal-sub">${c.angle}</p><div class="modal-roles">${c.roles.map(r=>`<span>${r}</span>`).join('')}</div><section class="modal-section"><h3>Why I Fit</h3><p>${c.whyFit}</p></section><section class="modal-section"><h3>What Stood Out to Me</h3><p>${c.stoodOut}</p></section><section class="modal-section"><h3>Why the Mission Connects</h3><p>${c.mission}</p></section><section class="modal-section"><h3>Where My Background Connects</h3><div class="connect-list">${c.connects.map(([h,t])=>`<div class="connect-item"><strong>${h}</strong><span>${t}</span></div>`).join('')}</div></section><section class="modal-section"><h3>What I’d Like to Ask</h3><div class="question">${c.question}</div></section><div class="modal-actions"><a class="btn btn-primary" href="assets/Aaron_Ray_Resume.pdf" target="_blank">View Resume</a><a class="btn btn-ghost" href="https://github.com/rayaaron1994" target="_blank">GitHub ↗</a></div>`;modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';document.querySelector('.panel').scrollTop=0}
+grid.addEventListener('click',e=>{const b=e.target.closest('[data-company]');if(b)openCompany(Number(b.dataset.company))});document.addEventListener('click',e=>{if(e.target.closest('[data-close]')){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow=''}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow=''}});
+</script>
+</body></html>
